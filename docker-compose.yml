@@ -1,0 +1,29 @@
+version: '3'
+services:
+  movies:
+    image: rahamshaik/moviesservice:latest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: rahamshaik/trainservice:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: rahamshaik/dthservice:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: rahamshaik/rechargeservice:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
