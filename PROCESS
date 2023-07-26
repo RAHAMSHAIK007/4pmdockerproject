@@ -104,3 +104,27 @@ services:
 
 6. STACK:
 docker stack deploy -c docker-compose.yml raham
+
+7. HISTORY:
+
+  1  vim docker-compose.yml
+    2  docker node ls
+    3  docker stack ls
+    4  docker service ls
+    5  docker service ps raham_dth
+    6  docker service ps raham_movies
+    7  curl -L https://downloads.portainer.io/ce2-16/portainer-agent-stack.yml -o portainer-agent-stack.yml
+    8  ll
+    9  vim portainer-agent-stack.yml
+   10  ll
+   11  docker stack deploy -c portainer-agent-stack.yml portainer
+   12  docker stack ls
+   13  docker ps
+   14  docker ps -a
+   15  docker stack ls
+   16  docker service ls
+   17  docker volume ls
+   18  docker images
+   19  docker network ls
+   20  cat docker-compose.yml
+   21  history
